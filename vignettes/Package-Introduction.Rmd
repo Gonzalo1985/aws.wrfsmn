@@ -1,0 +1,19 @@
+---
+title: "Package-Introduction"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Package-Introduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+This package was generated for data management of the operational outputs of the deterministic WRF model of the National Meteorological Service (NMS) of Argentina which are available in Amazon Web Services (AWS). To call library:
+```{r setup}
+library(aws.wrfsmn)
+```
