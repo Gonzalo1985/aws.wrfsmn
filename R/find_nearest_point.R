@@ -9,6 +9,8 @@
 #'
 #' @import terra
 #' @return a vector with the nearest location (lon/lat) and time serie of point
+#'
+#'
 #' @export
 #'
 find.nearest.point <- function(data.spat.raster = data.spat.raster,

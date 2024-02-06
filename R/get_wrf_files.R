@@ -3,26 +3,29 @@
 #' @description
 #' Character string with the filenames of WRF SMN located in AWS Bucket
 #'
-#' @param anual character or numeric of year
-#' @param mes character or numeric of month
-#' @param dia character or numeric of day
-#' @param ciclo cycle of forecast, "00", "06", "12" or "18"
+#' @param year character or numeric of year
+#' @param month character or numeric of month
+#' @param day character or numeric of day
+#' @param cycle cycle of forecast, "00", "06", "12" or "18"
 #' @param time selection of datasets, "01H", "24H" or "10M"
 #'
 #' @import aws.s3
 #' @return string of the list of elements in the Bucket
+#' @examples
+#' get.wrf.files(year = 2024, month = 1, day = 1, cycle = "18", time = "24H")
+#'
 #' @export
 #'
-get.wrf.files <- function(anual = anual, mes = mes, dia = dia,
-                          ciclo = ciclo, time = time){
+get.wrf.files <- function(year = year, month = month, day = day,
+                          cycle = cycle, time = time){
 
-  mes <- sprintf("%02d", mes)
-  dia <- sprintf("%02d", dia)
+  month <- sprintf("%02d", month)
+  day <- sprintf("%02d", day)
 
   # filenames of the Bucket
   wrf.names <- get_bucket_df(
     bucket = "s3://smn-ar-wrf/",
-    prefix = paste0("DATA/WRF/DET/", anual, "/", mes, "/", dia, "/", ciclo),
+    prefix = paste0("DATA/WRF/DET/", year, "/", month, "/", day, "/", cycle),
     max = Inf,
     region = "us-west-2")
 

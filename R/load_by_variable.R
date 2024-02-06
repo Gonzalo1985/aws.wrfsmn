@@ -10,6 +10,7 @@
 #'
 #' @import terra
 #' @return Spat Raster
+#'
 #' @export
 #'
 load.by.variable <- function(nc.filenames = nc.filenames,

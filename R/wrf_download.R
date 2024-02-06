@@ -7,6 +7,9 @@
 #'
 #' @import aws.s3
 #' @return downloaded netcdf files
+#' @examples
+#' wrf.download(wrf.name = "DATA/WRF/DET/2024/01/01/18/WRFDETAR_24H_20240101_18_000.nc")
+#'
 #' @export
 #'
 wrf.download <- function(wrf.name = wrf.name){

@@ -4,16 +4,22 @@
 \alias{get.wrf.files}
 \title{Title}
 \usage{
-get.wrf.files(anual = anual, mes = mes, dia = dia, ciclo = ciclo, time = time)
+get.wrf.files(
+  year = year,
+  month = month,
+  day = day,
+  cycle = cycle,
+  time = time
+)
 }
 \arguments{
-\item{anual}{character or numeric of year}
+\item{year}{character or numeric of year}
 
-\item{mes}{character or numeric of month}
+\item{month}{character or numeric of month}
 
-\item{dia}{character or numeric of day}
+\item{day}{character or numeric of day}
 
-\item{ciclo}{cycle of forecast, "00", "06", "12" or "18"}
+\item{cycle}{cycle of forecast, "00", "06", "12" or "18"}
 
 \item{time}{selection of datasets, "01H", "24H" or "10M"}
 }
