@@ -3,12 +3,14 @@
 #' @description
 #' Location of nearest point to lon/lat and temporal serie of location
 #'
+#' @usage find.nearest.point(data.spat.raster = data.spat.raster, lon = lon, lat = lat)
+#'
 #' @param data.spat.raster Spat Raster of WRF SMN (only one or several)
 #' @param lon Longitude location of nearest point to find
 #' @param lat Latitude location of nearest point to find
 #'
 #' @import terra
-#' @return a vector with the nearest location (lon/lat) and time serie of point
+#' @return a vector with the nearest location (lon/lat) and time serie of that location
 #'
 #'
 #' @export

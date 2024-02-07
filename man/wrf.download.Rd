@@ -7,7 +7,7 @@
 wrf.download(wrf.name = wrf.name)
 }
 \arguments{
-\item{wrf.name}{list of names to download from get.wrf.files}
+\item{wrf.name}{list of names to download from get.wrf.files. e.g.: "DATA/WRF/DET/2024/01/01/18/WRFDETAR_24H_20240101_18_000.nc"}
 }
 \value{
 downloaded netcdf files

@@ -4,13 +4,7 @@
 \alias{get.wrf.files}
 \title{Title}
 \usage{
-get.wrf.files(
-  year = year,
-  month = month,
-  day = day,
-  cycle = cycle,
-  time = time
-)
+get.wrf.files(year = year, month = month, day = day, cycle = cycle, time = time)
 }
 \arguments{
 \item{year}{character or numeric of year}

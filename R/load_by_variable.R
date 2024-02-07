@@ -3,6 +3,8 @@
 #' @description
 #' Open of netcdf files of WRF SMN drom AWS and optional projection
 #'
+#' @usage load.by.variable(nc.filenames, variable, transform, method)
+#'
 #' @param nc.filenames netcdf files
 #' @param variable name of variable from https://odp-aws-smn.github.io/documentation_wrf_det/Formato_de_datos/ as character
 #' @param transform TRUE to project data to longlat datum=WGS84

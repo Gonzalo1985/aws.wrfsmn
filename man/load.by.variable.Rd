@@ -4,12 +4,7 @@
 \alias{load.by.variable}
 \title{Title}
 \usage{
-load.by.variable(
-  nc.filenames = nc.filenames,
-  variable = variable,
-  transform = transform,
-  method = method
-)
+load.by.variable(nc.filenames, variable, transform, method)
 }
 \arguments{
 \item{nc.filenames}{netcdf files}

@@ -3,12 +3,12 @@
 #' @description
 #' Download of WRF SMN data from AWS
 #'
-#' @param wrf.name list of names to download from get.wrf.files
+#' @usage wrf.download(wrf.name = wrf.name)
+#'
+#' @param wrf.name list of names to download from get.wrf.files. e.g.: "DATA/WRF/DET/2024/01/01/18/WRFDETAR_24H_20240101_18_000.nc"
 #'
 #' @import aws.s3
 #' @return downloaded netcdf files
-#' @examples
-#' wrf.download(wrf.name = "DATA/WRF/DET/2024/01/01/18/WRFDETAR_24H_20240101_18_000.nc")
 #'
 #' @export
 #'

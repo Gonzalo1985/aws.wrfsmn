@@ -14,7 +14,7 @@ find.nearest.point(data.spat.raster = data.spat.raster, lon = lon, lat = lat)
 \item{lat}{Latitude location of nearest point to find}
 }
 \value{
-a vector with the nearest location (lon/lat) and time serie of point
+a vector with the nearest location (lon/lat) and time serie of that location
 }
 \description{
 Location of nearest point to lon/lat and temporal serie of location

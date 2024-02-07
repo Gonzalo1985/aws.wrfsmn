@@ -3,6 +3,8 @@
 #' @description
 #' Character string with the filenames of WRF SMN located in AWS Bucket
 #'
+#' @usage get.wrf.files(year = year, month = month, day = day, cycle = cycle, time = time)
+#'
 #' @param year character or numeric of year
 #' @param month character or numeric of month
 #' @param day character or numeric of day
@@ -11,8 +13,6 @@
 #'
 #' @import aws.s3
 #' @return string of the list of elements in the Bucket
-#' @examples
-#' get.wrf.files(year = 2024, month = 1, day = 1, cycle = "18", time = "24H")
 #'
 #' @export
 #'
