@@ -1,4 +1,4 @@
-#' Title
+#' Load and projection of data
 #'
 #' @description
 #' Open of netcdf files of WRF SMN drom AWS and optional projection

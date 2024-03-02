@@ -1,4 +1,4 @@
-#' Title
+#' Temporal series of closest location
 #'
 #' @description
 #' Location of nearest point to lon/lat and temporal serie of location

@@ -2,7 +2,7 @@
 % Please edit documentation in R/load_by_variable.R
 \name{load.by.variable}
 \alias{load.by.variable}
-\title{Title}
+\title{Load and projection of data}
 \usage{
 load.by.variable(nc.filenames, variable, transform, method)
 }

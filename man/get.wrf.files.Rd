@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_wrf_files.R
 \name{get.wrf.files}
 \alias{get.wrf.files}
-\title{Title}
+\title{List of available files for downloading}
 \usage{
 get.wrf.files(year = year, month = month, day = day, cycle = cycle, time = time)
 }

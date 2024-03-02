@@ -2,7 +2,7 @@
 % Please edit documentation in R/find_nearest_point.R
 \name{find.nearest.point}
 \alias{find.nearest.point}
-\title{Title}
+\title{Temporal series of closest location}
 \usage{
 find.nearest.point(data.spat.raster = data.spat.raster, lon = lon, lat = lat)
 }

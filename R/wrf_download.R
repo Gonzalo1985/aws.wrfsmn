@@ -1,4 +1,4 @@
-#' Title
+#' Download of wrf files
 #'
 #' @description
 #' Download of WRF SMN data from AWS

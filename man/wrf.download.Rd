@@ -2,7 +2,7 @@
 % Please edit documentation in R/wrf_download.R
 \name{wrf.download}
 \alias{wrf.download}
-\title{Title}
+\title{Download of wrf files}
 \usage{
 wrf.download(wrf.name = wrf.name)
 }

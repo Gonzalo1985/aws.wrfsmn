@@ -1,4 +1,4 @@
-#' Title
+#' List of available files for downloading
 #'
 #' @description
 #' Character string with the filenames of WRF SMN located in AWS Bucket
