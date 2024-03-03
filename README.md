@@ -1,5 +1,5 @@
 # aws.wrfsmn R package
-This R package (library) was created to handle WRF SMN data obtained from Amazon (AWS) services (https://registry.opendata.aws/smn-ar-wrf-dataset/).
+This R package (library) was created to handle WRF SMN data obtained from Amazon (AWS) services (https://registry.opendata.aws/smn-ar-wrf-dataset/). The operational version can be obtained from https://cran.r-project.org/web/packages/aws.wrfsmn/index.html.
 
 ## Package Installation
 ### Option 1
