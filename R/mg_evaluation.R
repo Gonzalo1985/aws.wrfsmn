@@ -14,7 +14,8 @@
 #' @param lmodel Element of class lm obtained from multiple.guidance output
 #' function
 #'
-#' @import stats hydroGOF
+#' @importFrom stats predict cor
+#' @import hydroGOF
 #' @return List of two elements. First element is a matrix with the columns of
 #' observed data, modeled data and corrected data. Second element is a data
 #' frame of the statistical results of the modeled and corrected data versus

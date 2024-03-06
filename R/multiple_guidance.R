@@ -11,7 +11,7 @@
 #' @param predictors Character array with one or more elements of the predictors
 #' chosen by the user
 #'
-#' @import stats
+#' @importFrom stats lm as.formula
 #' @return an element of class lm
 #'
 #'

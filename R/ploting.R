@@ -6,7 +6,8 @@
 #' @param data Data frame from daily2monthly output function or any other
 #' temporal series
 #'
-#' @import dplyr ggplot2
+#' @importFrom dplyr as_tibble
+#' @import ggplot2
 #' @return ggplot element
 #'
 #' @export

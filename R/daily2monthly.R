@@ -5,7 +5,11 @@
 #'
 #' @param data matrix with daily data from mg.evaluation output function
 #'
-#' @import dplyr lubridate
+#' @importFrom dplyr as_tibble group_by summarize
+#' @importFrom lubridate floor_date
+#' @importFrom magrittr %>%
+#' @name %>%
+#' @rdname daily2monthly
 #' @return Data frame with monthly data
 #'
 #' @export
