@@ -50,10 +50,10 @@ The evaluation of this correction is:
 ```{r}
 evaluation.eva <- mg.evaluation(input.data = eva, predictand = 'evapo_obs', predictors = test.predictors, var.model = 'OUT_EVAP', lmodel = mg)
 
-evaluation.eva
+head(evaluation.eva)
 ```
 
 Finally, the monthly data is calculated to be plot:
-```{r}
+```{r, out.width = "100%", fig.align = "center", echo=FALSE}
 ploting(daily2monthly(evaluation.eva[[1]]))
 ```
