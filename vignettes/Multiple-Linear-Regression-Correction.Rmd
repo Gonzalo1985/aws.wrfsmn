@@ -20,7 +20,7 @@ First the package should be loaded:
 library(aws.wrfsmn)
 ```
 
-The example data to use will be 'eva':
+The example data to use will be 'eva' and should be call it with data:
 ```{r, echo = FALSE, results = FALSE}
 data(eva)
 ```
@@ -40,13 +40,13 @@ test.predictors <- c('OUT_PREC',
                      'OUT_SURF_TEMP')
 ```
 
-Using multiple.guidance function:
+Using multiple.guidance function to obtain the regression coefficients:
 ```{r}
 mg <- multiple.guidance(input.data = eva, predictand = 'evapo_obs', predictors = test.predictors)
 mg
 ```
 
-The evaluation of this correction is:
+The evaluation of the correction applied from the mg regression is:
 ```{r}
 evaluation.eva <- mg.evaluation(input.data = eva, predictand = 'evapo_obs', predictors = test.predictors, var.model = 'OUT_EVAP', lmodel = mg)
 

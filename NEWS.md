@@ -1,3 +1,9 @@
+# aws.wrfsmn 0.0.3
+
+- New tests and bug correction of vignettes
+
+---
+
 # aws.wrfsmn 0.0.2
 
 - New functions added

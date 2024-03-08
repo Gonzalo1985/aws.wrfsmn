@@ -12,6 +12,7 @@
 #' chosen by the user
 #'
 #' @importFrom stats lm as.formula
+#' @importFrom lubridate is.POSIXct
 #' @return an element of class lm
 #'
 #'
@@ -21,10 +22,12 @@ multiple.guidance <- function(input.data = input.data,
                               predictand = predictand,
                               predictors = predictors)
 {
+  if (is.POSIXct(input.data[,1]) == TRUE)
+    {lmodel <- lm(as.formula(paste0(predictand, " ~ ",
+                                    paste(predictors, collapse = "+"))),
+                  data = input.data)
 
-  lmodel <- lm(as.formula(paste0(predictand, " ~ ",
-                                 paste(predictors, collapse = "+"))),
-               data = input.data)
+     return(lmodel)} else {stop("The first column should be POSIXct class")}
 
-  return(lmodel)
+
 }

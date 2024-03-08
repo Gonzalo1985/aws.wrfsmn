@@ -30,32 +30,35 @@ mg.evaluation <- function(input.data = input.data,
                           lmodel = lmodel)
 
 {
-  observation <- as.numeric(input.data[, predictand])
-  model <- as.numeric(input.data[, var.model])
-  guidance <- as.numeric(predict(lmodel, input.data[, predictors]))
-  #guidance <- predict(lmodel, input.data)
+  if (is.POSIXct(input.data[,1]) == TRUE)
+    {observation <- as.numeric(input.data[, predictand])
+     model <- as.numeric(input.data[, var.model])
+     #guidance <- as.numeric(predict(lmodel, input.data[, predictors]))
+     guidance <- predict(lmodel, input.data)
 
-  output.series <- cbind(as.character(input.data[, 'Dates']),
-                         observation,
-                         model,
-                         guidance)
-  colnames(output.series) <- c('Dates', 'observation', 'model', 'guidance')
+     output.series <- cbind(as.character(input.data[, 'Dates']),
+                            observation,
+                            model,
+                            guidance)
+     colnames(output.series) <- c('Dates', 'observation', 'model', 'guidance')
 
-  rmse.model <- rmse(model, observation)
-  rmse.guida <- rmse(guidance, observation)
-  NS.model <- NSE(model, observation)
-  NS.guida <- NSE(guidance, observation)
-  cor.model <- cor(model, observation, use = "complete.obs", method = "pearson")
-  cor.guida <- cor(guidance, observation, use = "complete.obs", method = "pearson")
-  KGE.model <- KGE(model, observation, method = "2012")
-  KGE.guida <- KGE(guidance, observation, method = "2012")
+     rmse.model <- rmse(model, observation)
+     rmse.guida <- rmse(guidance, observation)
+     NS.model <- NSE(model, observation)
+     NS.guida <- NSE(guidance, observation)
+     cor.model <- cor(model, observation, use = "complete.obs", method = "pearson")
+     cor.guida <- cor(guidance, observation, use = "complete.obs", method = "pearson")
+     KGE.model <- KGE(model, observation, method = "2012")
+     KGE.guida <- KGE(guidance, observation, method = "2012")
 
-  output.table <- data.frame(rmse = c(rmse.model, rmse.guida),
-                             nash = c(NS.model, NS.guida),
-                             corr = c(cor.model, cor.guida),
-                             KGE = c(KGE.model, KGE.guida))
-  rownames(output.table) <- c('Model', 'Guidance')
+     output.table <- data.frame(rmse = c(rmse.model, rmse.guida),
+                                nash = c(NS.model, NS.guida),
+                                corr = c(cor.model, cor.guida),
+                                KGE = c(KGE.model, KGE.guida))
+     rownames(output.table) <- c('Model', 'Guidance')
 
-  return(list(output.series, output.table))
+     return(list(output.series, output.table))} else
+       {stop("The first column should be POSIXct class")}
+
 
 }
