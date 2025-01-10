@@ -16,8 +16,8 @@ load.by.variable(nc.filenames, variable, transform, method)
 \item{method}{if transform is set TRUE define projection method taken from project function of terra package}
 }
 \value{
-Spat Raster
+Spat Raster with the chosen variable (optional: with the projection changed)
 }
 \description{
-Open of netcdf files of WRF SMN drom AWS and optional projection
+Open of netcdf files of WRF SMN from AWS and optional projection
 }

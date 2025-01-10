@@ -1,7 +1,7 @@
 #' Load and projection of data
 #'
 #' @description
-#' Open of netcdf files of WRF SMN drom AWS and optional projection
+#' Open of netcdf files of WRF SMN from AWS and optional projection
 #'
 #' @usage load.by.variable(nc.filenames, variable, transform, method)
 #'
@@ -12,7 +12,7 @@
 #'
 #' @importFrom terra rast
 #' @importFrom terra project
-#' @return Spat Raster
+#' @return Spat Raster with the chosen variable (optional: with the projection changed)
 #'
 #' @export
 #'
