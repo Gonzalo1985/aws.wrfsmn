@@ -1,3 +1,9 @@
+# aws.wrfsmn 0.1.0
+
+- Bug fixes in get_wrf_files.R
+
+---
+
 # aws.wrfsmn 0.0.4
 
 - New functions

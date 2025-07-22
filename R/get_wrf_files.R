@@ -23,13 +23,16 @@ get.wrf.files <- function(year = year, month = month, day = day,
   day <- sprintf("%02d", day)
 
   # filenames of the Bucket
-  wrf.names <- get_bucket_df(
-    bucket = "s3://smn-ar-wrf/",
-    prefix = paste0("DATA/WRF/DET/", year, "/", month, "/", day, "/", cycle),
-    max = Inf,
-    region = "us-west-2")
+  wrf.names <- get_bucket(bucket = "smn-ar-wrf",
+                          prefix = paste0("DATA/WRF/DET/",
+                                          year, "/", month, "/", day,
+                                          "/", cycle),
+                          max = Inf,
+                          region = "us-west-2")
 
-  wrf.names <- wrf.names$Key[grepl(time, wrf.names$Key)]
+  wrf.names <- sapply(wrf.names, function(x) x[["Key"]])
+  wrf.names.rows <- which(grepl(time, wrf.names, fixed = TRUE) == TRUE)
+  wrf.names <- wrf.names[wrf.names.rows]
 
   return(wrf.names)
 }

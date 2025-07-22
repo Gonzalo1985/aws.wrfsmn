@@ -1,5 +1,5 @@
-── R CMD check results ───────────────────────────────────────────────────────────────────────────────────────────────────── aws.wrfsmn 0.0.4 ────
-Duration: 1m 58.7s
+── R CMD check results ────────────────────────────────────────────────────────────── aws.wrfsmn 0.1.0 ────
+Duration: 1m 18.8s
 
 ❯ checking data for ASCII and uncompressed saves ... OK
    WARNING
