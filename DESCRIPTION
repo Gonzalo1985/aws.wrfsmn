@@ -3,7 +3,9 @@ Package: aws.wrfsmn
 Title: Data Processing of SMN Hi-Res Weather Forecast from 'AWS'
 Version: 0.1.0
 Authors@R: 
-    person("Gonzalo", "Diaz", , "gonzalomartindiaz22@gmail.com", role = c("cre", "aut"))
+    person("Gonzalo", "Diaz", , "gonzalomartindiaz22@gmail.com",
+           role = c("cre", "aut"),
+           comment = c(ORCID = "0009-0003-9056-4896"))
 Description: Exploration of Weather Research & Forecasting ('WRF') Model data
     of Servicio Meteorologico Nacional (SMN) from Amazon Web Services
     (<https://registry.opendata.aws/smn-ar-wrf-dataset/>) cloud. The package
