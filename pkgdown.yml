@@ -1,0 +1,10 @@
+pandoc: 3.8.3
+pkgdown: 2.2.0
+pkgdown_sha: ~
+articles:
+  Multiple-Linear-Regression-Correction: Multiple-Linear-Regression-Correction.html
+  Package-Introduction: Package-Introduction.html
+last_built: 2026-07-04T19:52Z
+urls:
+  reference: https://gonzalo1985.github.io/aws.wrfsmn/reference
+  article: https://gonzalo1985.github.io/aws.wrfsmn/articles

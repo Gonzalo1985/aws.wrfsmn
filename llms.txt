@@ -1,0 +1,61 @@
+# aws.wrfsmn R package
+
+This R package (library) was created to handle WRF SMN data obtained
+from Amazon (AWS) services
+(<https://registry.opendata.aws/smn-ar-wrf-dataset/>). The operational
+version can be obtained from
+<https://cran.r-project.org/web/packages/aws.wrfsmn/index.html>.
+
+## Package Installation
+
+### Option 1
+
+First, the repository containing the files needed to install the package
+must be cloned. From an OS terminal, run the following command:
+
+    $ git clone https://github.com/Gonzalo1985/aws.wrfsmn
+
+From the folder cloned with the files of the repository, execute the
+following command from an R console:
+`{r, echo = TRUE, results = FALSE} devtools::install()`
+
+### Option 2
+
+From an R console run the following command:
+`{r, echo = TRUE, results = FALSE} devtools::install_github("Gonzalo1985/aws.wrfsmn")`
+
+Contact: Gonzalo M. Díaz (<gonzalomartindiaz22@gmail.com>)
+
+# Package index
+
+## All functions
+
+- [`daily.data.fields()`](https://gonzalo1985.github.io/aws.wrfsmn/reference/daily.data.fields.md)
+  : Daily data is obtained from hourly data
+- [`daily2monthly()`](https://gonzalo1985.github.io/aws.wrfsmn/reference/daily2monthly.md)
+  : Daily data to monthly
+- [`eva`](https://gonzalo1985.github.io/aws.wrfsmn/reference/eva.md) :
+  Evaporation data (observation and model)
+- [`find.nearest.point()`](https://gonzalo1985.github.io/aws.wrfsmn/reference/find.nearest.point.md)
+  : Temporal series of closest location
+- [`get.wrf.files()`](https://gonzalo1985.github.io/aws.wrfsmn/reference/get.wrf.files.md)
+  : List of available files for downloading
+- [`ith()`](https://gonzalo1985.github.io/aws.wrfsmn/reference/ith.md) :
+  Calculation of ITH index
+- [`load.by.variable()`](https://gonzalo1985.github.io/aws.wrfsmn/reference/load.by.variable.md)
+  : Load and projection of data
+- [`mg.evaluation()`](https://gonzalo1985.github.io/aws.wrfsmn/reference/mg.evaluation.md)
+  : Evaluation of regression
+- [`multiple.guidance()`](https://gonzalo1985.github.io/aws.wrfsmn/reference/multiple.guidance.md)
+  : Multiple lineal regression of data
+- [`ploting()`](https://gonzalo1985.github.io/aws.wrfsmn/reference/ploting.md)
+  : Plot of data
+- [`wrf.download()`](https://gonzalo1985.github.io/aws.wrfsmn/reference/wrf.download.md)
+  : Download of wrf files
+
+# Articles
+
+### All vignettes
+
+- [Multiple-Linear-Regression-Correction](https://gonzalo1985.github.io/aws.wrfsmn/articles/Multiple-Linear-Regression-Correction.md):
+- [Package-Introduction](https://gonzalo1985.github.io/aws.wrfsmn/articles/Package-Introduction.md):
