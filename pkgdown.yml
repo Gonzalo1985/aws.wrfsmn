@@ -4,7 +4,7 @@ pkgdown_sha: ~
 articles:
   Multiple-Linear-Regression-Correction: Multiple-Linear-Regression-Correction.html
   Package-Introduction: Package-Introduction.html
-last_built: 2026-11-08T16:03Z
+last_built: 2026-11-13T01:28Z
 urls:
   reference: https://gonzalo1985.github.io/aws.wrfsmn/reference
   article: https://gonzalo1985.github.io/aws.wrfsmn/articles
